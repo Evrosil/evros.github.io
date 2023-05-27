@@ -343,10 +343,12 @@
 
 
             <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
+                <a href="#indexCard" class="waves-effect waves-light btn scrollLink"></a>
 
+                
+                    <a href="https://github.com/evrosil" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
                 
             </div>
             <div class="cover-social-link">
@@ -439,6 +441,13 @@
         });
         
     });
+
+$(document).ready(function(){
+        $( "a.scrollLink" ).click(function( event ) {  
+            event.preventDefault();  
+            $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);  
+    });  
+});
 </script>
 
 
