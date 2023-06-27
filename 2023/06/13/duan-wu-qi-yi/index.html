@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -47,6 +48,29 @@
 
 
 <body>
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -380,12 +404,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B1%88%E5%8E%9F/">
-                                <span class="chip bg-color">屈原</span>
-                            </a>
-                        
                             <a href="/tags/%E5%A4%A9%E5%9C%B0%E8%AF%97%E5%BF%83/">
                                 <span class="chip bg-color">天地诗心</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%B1%88%E5%8E%9F/">
+                                <span class="chip bg-color">屈原</span>
                             </a>
                         
                     </div>
@@ -539,12 +563,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B1%88%E5%8E%9F/">
-                                    <span class="chip bg-color">屈原</span>
-                                </a>
-                            
                                 <a href="/tags/%E5%A4%A9%E5%9C%B0%E8%AF%97%E5%BF%83/">
                                     <span class="chip bg-color">天地诗心</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%B1%88%E5%8E%9F/">
+                                    <span class="chip bg-color">屈原</span>
                                 </a>
                             
                         </div>
@@ -625,12 +649,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B1%88%E5%8E%9F/">
-                        <span class="chip bg-color">屈原</span>
-                    </a>
-                    
                     <a href="/tags/%E5%A4%A9%E5%9C%B0%E8%AF%97%E5%BF%83/">
                         <span class="chip bg-color">天地诗心</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%B1%88%E5%8E%9F/">
+                        <span class="chip bg-color">屈原</span>
                     </a>
                     
                 </div>

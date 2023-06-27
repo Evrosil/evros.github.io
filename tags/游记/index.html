@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -47,6 +48,29 @@
 
 
 <body>
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -310,19 +334,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E5%B1%88%E5%8E%9F/" title="屈原: 6">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="屈原" style="background-color: #F9EBEA;">屈原
-                        <span class="tag-length">6</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/%E5%A4%A9%E5%9C%B0%E8%AF%97%E5%BF%83/" title="天地诗心: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="天地诗心" style="background-color: #F5EEF8;">天地诗心
+                            data-tagname="天地诗心" style="background-color: #F9EBEA;">天地诗心
                         <span class="tag-length">4</span>
                     </span>
                 </a>
@@ -331,8 +346,17 @@
                 <a href="/tags/%E6%B8%B8%E8%AE%B0/" title="游记: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="游记" style="background-color: #D5F5E3;">游记
+                            data-tagname="游记" style="background-color: #F5EEF8;">游记
                         <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%B1%88%E5%8E%9F/" title="屈原: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="屈原" style="background-color: #D5F5E3;">屈原
+                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
